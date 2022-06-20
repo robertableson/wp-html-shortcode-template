@@ -11,7 +11,7 @@ function ra_display_shortcode_template() {
 
 <?php
     $content = ob_get_contents();
-	ob_end_clean();
-	return $content;
+    ob_end_clean();
+    return $content;
 }
 add_shortcode('ra_display_shortcode_result', 'ra_display_shortcode_template');
